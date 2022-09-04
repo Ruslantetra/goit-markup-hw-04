@@ -117,16 +117,31 @@ p {
     color:#2196F3;
 }
 
+
+
 .nav-address {
     display: flex;
     margin-left: auto;
+    align-items: center;
+}
+
+.icon-envelope-hover {
+    margin: 34px 10px 34px 0;
+}
+
+.envelope {
+    fill: var(--secondary-color);
+}
+
+.envelope:hover {
+    fill: var(--accent-color)
 }
 /* .nav-address .item:not(:last-child) {
     margin-right: 50px;
 } */
-.nav-address .item + .item {
+/* .nav-address .item + .item {
     margin-left: 50px;
-}
+} */
 .nav-address .link {
     display: block;
     padding-top: 32px;
@@ -146,6 +161,19 @@ p {
     color:#2196F3;
 }
 
+.icon-smartphone {
+   margin-right: 10px;
+    margin-left: 30px;
+}
+
+.smartphone {
+    fill: var(--secondary-color);
+}
+
+.smartphone:hover {
+    fill: var(--accent-color);
+}
+
 .tel {
     color: var(--secondary-color);
     font-weight: 500;
@@ -160,11 +188,23 @@ p {
 
 /* main */
 /* section 1 */
+/* не повторяться картинке background-repeat: no-repeat; */
+
+.hero {
+    background-image: url(../img/hw-four/workingprocess.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-clip:border-box;
+}
 .section-one {
     background-color: var(--header-footer-color);
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 200px;    
+    padding-bottom: 200px;
 }
 
 .section-one-title {
@@ -209,6 +249,24 @@ p {
     margin: 0 auto;
     padding: 0 15px;  
 }
+.ul-btn-icon {
+    display: flex;
+      
+}
+.ul-btn-icon .item {
+    margin-bottom: 30px;
+}
+
+.ul-btn-icon .item + .item {
+    margin-left: 30px;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    width: 270px;
+    height: 120px;
+}
 
 .ul-section-two {
     display: flex;
@@ -217,6 +275,7 @@ p {
 .ul-section-two .item {
     width: 270px;
 }
+
 
 .ul-section-two .item + .item {
     margin-left: 30px;
@@ -272,6 +331,7 @@ p {
     text-align: center;
     padding-bottom: 94px;
     padding-top: 94px;  
+    /* margin-bottom: 94px; */
 }
 
 .title-section-four {
@@ -298,7 +358,7 @@ p {
 
 .container-title-text {
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 } 
 
 .title-four {
@@ -313,11 +373,93 @@ p {
     line-height: 1.18;
 }
 
+.container-social {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}
+
+.ul-container-social {
+    display: flex;
+}
+
+.ul-container-social .item + .item {
+    margin-left: 10px;
+}
+.button-social {
+    padding: 12px 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white-color);
+}
+
+.button-social:hover {
+    background-color: var(--accent-color);
+}
+
+.icon-socials {
+    fill: var(--secondary-color);
+}
+
+.icon-socials:hover {
+    fill: var(--white-color);
+}
+
+/* section 5 */
+.section-five {
+    text-align: center;
+    padding-bottom: 94px;
+}
+.title-section-five {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    padding-top: 94px;
+    margin-bottom: 50px;  
+}
+
+.clients {
+    display: flex;
+}
+
+.clients .item + .item {
+    margin-left: 30px;
+}
+
+.button-clients {
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--white-color);
+}
+
+.button-clients:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.button-clients {
+    fill: var(--secondary-color);
+}
+
+.button-clients:hover {
+    fill: var(--accent-color);
+}
+
+
 /* footer */
 .footer {
     background-color: var(--header-footer-color);
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;   
+}
+
+.cont {
+    display: flex;
+}
+
+.container-footer {
+    margin-right: 70px;
 }
 
 .logo-footer {
@@ -366,5 +508,40 @@ p {
     color: #2196F3;
 }
 
+.container-social-footer {
+    padding-top: 12px;
 
+}
+
+.title-footer {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+   
+    margin-bottom: 20px;   
+}
+
+.ul-social-footer {
+    display: flex;
+}
+
+.ul-social-footer .item + .item {
+    margin-left: 10px;
+}
+
+.button-social-footer {
+    padding: 12px 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--secondary-color);   
+}
+
+.button-social-footer:hover {
+    background-color: var(--accent-color);
+}
+
+.icon-social {
+    fill: #FFFFFF;
+}
 
