@@ -394,20 +394,25 @@ p {
 
 .ul-container-social {
     display: flex;
-    margin-left: 32px;
-    margin-right: 32px;
+    justify-content: center;
+    /* margin-left: 32px;
+    margin-right: 32px; */
 }
 
 .ul-container-social .item + .item {
     margin-left: 10px;
 }
 .link-social {
-    display: inline-block;
-    padding: 12px ;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     border: none;
     background-color: var(--white-color);
     fill: var(--secondary-color);
+    justify-content: center;
 }
 
 .link-social:hover,
@@ -439,13 +444,15 @@ p {
 
 
 .clients-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--secondary-color);
     background-color: var(--white-color);
     fill: var(--secondary-color);
-    padding: 16px 32px;
+    
     
 
 }
@@ -538,11 +545,14 @@ p {
 }
 
 .link-social-footer {
-    display: inline-block;
-    padding: 12px 12px ;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     fill: var(--white-color);
-    background-color: var(--secondary-color);  
+    background-color: rgba(117, 117, 117, 1);  
 }
 
 .link-social-footer:hover,

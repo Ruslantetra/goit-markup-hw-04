@@ -403,11 +403,14 @@ p {
 }
 
 .link-social-footer {
-    display: inline-block;
-    padding: 12px 12px ;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     fill: var(--white-color);
-    background-color: var(--secondary-color);   
+    background-color:  rgba(117, 117, 117, 1);   
 }
 
 .link-social-footer:hover,
